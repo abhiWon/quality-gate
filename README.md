@@ -10,7 +10,7 @@ Limitations
 2] Need to ensure that the rule is added on master branch to ensure that only if the checks related to SonarCloud Code Analyis & SonarCloud Build are successful, user can merge the PR.
 
 
-ANALYSIS BENCHMARKS:
+ANALYSIS MEASURES:
 
 
 *******************************************************************************************************
