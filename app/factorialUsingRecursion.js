@@ -92,7 +92,7 @@ require([
         geoLocate($("#search").val());
         e.preventDefault();
     });
-});
+};
 
 
 
