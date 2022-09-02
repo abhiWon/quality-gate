@@ -43,9 +43,10 @@ Function has too many parameters (14). Maximum allowed is 7.
 Refactor this function to reduce its Cognitive Complexity from 33 to the 15 allowed.
 
 
-***************************************************************************************
+*******************************************************************************************************
 SECURITY REVIEW - Security-sensitive code that requires manual review to assess whether or not a vulnerability exists.
-***************************************************************************************
+*******************************************************************************************************
+
 var r = Math.floor(Math.random() * 250);
 
 Using pseudorandom number generators (PRNGs) is security-sensitive. For example, it has led in the past to the following vulnerabilities:
