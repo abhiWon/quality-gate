@@ -1,2 +1,2 @@
 # quality-gate
-quality-gate
+quality-gate inc
