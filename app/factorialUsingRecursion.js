@@ -1,5 +1,3 @@
-if (window.location.protocol != "https:")
-    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 require([
   "esri/map", "esri/tasks/locator", "esri/SpatialReference", "esri/graphic",
   "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleMarkerSymbol",
