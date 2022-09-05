@@ -21,7 +21,8 @@ const mapStateToProps = state => {
     appName: state.common.appName,
     currentUser: state.common.currentUser,
     redirectTo: state.common.redirectTo
-  }};
+  }
+};
 
 const mapDispatchToProps = dispatch => ({
   onLoad: (payload, token) =>
@@ -55,8 +56,8 @@ class App extends React.Component {
           <Header
             appName={this.props.appName}
             currentUser={this.props.currentUser} />
-            <Switch>
-            <Route exact path="/" component={Home}/>
+          <Switch>
+            <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/editor/:slug" component={Editor} />
@@ -65,7 +66,7 @@ class App extends React.Component {
             <Route path="/settings" component={Settings} />
             <Route path="/@:username/favorites" component={ProfileFavorites} />
             <Route path="/@:username" component={Profile} />
-            </Switch>
+          </Switch>
         </div>
       );
     }
