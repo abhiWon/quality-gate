@@ -4,11 +4,6 @@ quality-gate
 QUALITY GATE ?
 A Quality Gate is a set of measure-based Boolean conditions. It helps you know immediately whether your project is production-ready. If your current status is not Passed, you'll see which measures caused the problem and the values required to pass.
 
-Limitations
-
-1] If no of lines of code is less than 20, the SonarCloud code analysis won't trigger the analysis.
-2] Need to ensure that the rule is added on master branch to ensure that only if the checks related to SonarCloud Code Analyis & SonarCloud Build are successful, user can merge the PR.
-
 
 ANALYSIS MEASURES:
 
@@ -56,3 +51,8 @@ When software generates predictable values in a context requiring unpredictabili
 As the Math.random() function relies on a weak pseudorandom number generator, this function should not be used for security-critical applications or for protecting sensitive data. In such context, a cryptographically strong pseudorandom number generator (CSPRNG) should be used instead.
 
 
+
+Limitations
+
+1] If no of lines of code is less than 20, the SonarCloud code analysis won't trigger the analysis.
+2] Need to ensure that the rule is added on master branch to ensure that only if the checks related to SonarCloud Code Analyis & SonarCloud Build are successful, user can merge the PR.
