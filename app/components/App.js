@@ -15,7 +15,7 @@ import Settings from '../components/Settings';
 import { store } from '../store';
 import { push } from 'react-router-redux';
 
-var mapStateToProps = state => {
+const mapStateToProps = state => {
   return {
     appLoaded: state.common.appLoaded,
     appName: state.common.appName,
@@ -24,7 +24,7 @@ var mapStateToProps = state => {
   }
 };
 
-var mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   onLoad: (payload, token) =>
     dispatch({ type: APP_LOAD, payload, token, skipTracking: true }),
   onRedirect: () =>
@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    var token = window.localStorage.getItem('jwt');
+    const token = window.localStorage.getItem('jwt');
     if (token) {
       agent.setToken(token);
     }
