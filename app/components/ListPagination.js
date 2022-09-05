@@ -19,9 +19,9 @@ const ListPagination = props => {
   }
 
   const setPage = page => {
-    if(props.pager) {
+    if (props.pager) {
       props.onSetPage(page, props.pager(page));
-    }else {
+    } else {
       props.onSetPage(page, agent.Articles.all(page))
     }
   };
@@ -39,7 +39,7 @@ const ListPagination = props => {
             };
             return (
               <li
-                className={ isCurrent ? 'page-item active' : 'page-item' }
+                className={isCurrent ? 'page-item active' : 'page-item'}
                 onClick={onClick}
                 key={v.toString()}>
 
